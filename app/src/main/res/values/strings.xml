@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">lab2</string>
+    <string name="authorInf">Інформація про автора</string>
+    <string name="infCaption">Задано формулу №2</string>
+    <string name="myGoals">Мої цілі</string>
+    <string name="authorName">Власенко О.В.</string>
+    <string name="speciality">Інженерія Програмного Забезпечення</string>
+    <string name="group">ПР4-1</string>
+    <string name="xHint">Введіть х</string>
+    <string name="cHint">Введіть с</string>
+    <string name="tHint">Введіть t</string>
+    <string name="result">Обрахувати</string>
+    <string name="clear">Очистити</string>
+</resources>

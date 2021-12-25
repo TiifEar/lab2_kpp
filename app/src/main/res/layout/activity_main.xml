@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/gray">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="15dp">
+
+        <TextView
+            android:id="@+id/infCaption"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/infCaption"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/formula" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/inputC"
+                android:textColorHint="@color/white"
+                android:textColor="@color/white"
+                android:gravity="center_horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:hint="@string/cHint"
+                android:inputType="number" />
+
+            <EditText
+                android:id="@+id/inputX"
+                android:textColorHint="@color/white"
+                android:textColor="@color/white"
+                android:gravity="center_horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:hint="@string/xHint"
+                android:inputType="number" />
+
+            <EditText
+                android:id="@+id/inputT"
+                android:textColorHint="@color/white"
+                android:textColor="@color/white"
+                android:gravity="center_horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:hint="@string/tHint"
+                android:inputType="number" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/result"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:onClick="onCalculate"
+                android:text="@string/result" />
+
+            <Button
+                android:id="@+id/clear"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:onClick="inputsClear"
+                android:text="@string/clear" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/AuthorInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="autorInfoToast"
+            android:text="@string/authorInf" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
